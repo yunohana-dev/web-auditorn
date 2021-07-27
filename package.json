@@ -1,7 +1,7 @@
 {
-  "name": "auditorn",
-  "description": "おじたんが任意のウェブページを評価します",
-  "version": "0.0.2",
+  "name": "web-auditorn",
+  "description": "うぇぶおじたんが任意のウェブページを評価します",
+  "version": "0.1.0",
   "bin": {
     "auditorn": "./bin/run"
   },
@@ -10,15 +10,14 @@
     "@oclif/command": "^1.6.1",
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.1.0",
-    "tslib": "^1.13.0",
-    "postinstall-build": "^5.0.3",
     "chalk": "^3.0.0",
-    "ora": "^4.0.3",
-    "inquirer": "^6.5.2",
+    "chrome-launcher": "^0.14.0",
     "columnify": "^1.5.4",
+    "inquirer": "^6.5.2",
+    "lighthouse": "^8.1.0",
     "make-dir": "^3.0.0",
-    "lighthouse": "^6.0.0",
-    "chrome-launcher": "^0.13.3"
+    "ora": "^4.0.3",
+    "tslib": "^1.13.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
@@ -52,7 +51,6 @@
   "repository": "wordpress/auditorn",
   "scripts": {
     "build": "tsc",
-    "postinstall": "postinstall-build dist",
     "postpack": "rimraf oclif.manifest.json",
     "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
