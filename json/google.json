@@ -1,0 +1,14 @@
+{
+  "name": "Google",
+  "origin": "https://google.com",
+  "resources": [
+    {
+      "name": "トップ",
+      "path": "/"
+    },
+    {
+      "name": "猫",
+      "path": "/search?q=猫"
+    }
+  ]
+}
